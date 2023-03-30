@@ -173,7 +173,6 @@ body main .main__periods .card::after {
     content: "";
     width: 20%;
     height: 20%;
-    padding: 0 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +321,6 @@ body main .main__periods .card::after {
     content: "";
     width: 20%;
     height: 20%;
-    padding: 0 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -471,7 +469,6 @@ body main .main__periods .card::after {
     content: "";
     width: 20%;
     height: 20%;
-    padding: 0 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -645,7 +642,6 @@ body main .main__periods .card::after {
     content: "";
     width: 20%;
     height: 20%;
-    padding: 0 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -818,7 +814,6 @@ body main .main__periods .card::after {
     content: "";
     width: 20%;
     height: 20%;
-    padding: 0 15px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
