@@ -200,19 +200,16 @@ body main .main__periods .card:hover:after {
     transition: all 0.5s;
   }
   body main .main__periods .card:nth-child(1):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+
+    content: "4500a.C.-3000 a.C.";
   }
   body main .main__periods .card:nth-child(2):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+
+    content: "3000.C.-1200a.C.";
   }
   body main .main__periods .card:nth-child(3):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+
+    content: "1200a.C.-500a.C.";
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1224px) {
@@ -352,19 +349,16 @@ body main .main__periods .card:hover:after {
     transition: all 0.5s;
   }
   body main .main__periods .card:nth-child(1):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+
+    content: "4500a.C.-3000 a.C.";
   }
   body main .main__periods .card:nth-child(2):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+
+    content: "3000.C.-1200a.C.";
   }
   body main .main__periods .card:nth-child(3):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+
+    content: "1200a.C.-500a.C.";
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -504,19 +498,16 @@ body main .main__periods .card:hover:after {
     transition: all 0.5s;
   }
   body main .main__periods .card:nth-child(1):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+
+    content: "4500a.C.-3000 a.C.";
   }
   body main .main__periods .card:nth-child(2):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+
+    content: "3000.C.-1200a.C.";
   }
   body main .main__periods .card:nth-child(3):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+
+    content: "1200a.C.-500a.C.";
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -681,19 +672,16 @@ body main .main__periods .card:hover:after {
     transition: all 0.5s;
   }
   body main .main__periods .card:nth-child(1):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+
+    content: "4500a.C.-3000 a.C.";
   }
   body main .main__periods .card:nth-child(2):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+
+    content: "3000.C.-1200a.C.";
   }
   body main .main__periods .card:nth-child(3):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+
+    content: "1200a.C.-500a.C.";
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
@@ -857,19 +845,15 @@ body main .main__periods .card:hover:after {
     transition: all 0.5s;
   }
   body main .main__periods .card:nth-child(1):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+
+    content: "4500a.C.-3000 a.C.";
   }
   body main .main__periods .card:nth-child(2):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+
+    content: "3000.C.-1200a.C.";
   }
   body main .main__periods .card:nth-child(3):hover:after {
-    padding: 0 15px;
-    font-size: 16px;
-    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+    content: "1200a.C.-500a.C.";
   }
 }
 @-webkit-keyframes expand {
