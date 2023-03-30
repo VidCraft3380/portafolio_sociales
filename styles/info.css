@@ -1,0 +1,514 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+html {
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #141414;
+}
+
+header .header__button {
+  display: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header .header__button {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    float: right;
+  }
+  header .header__button button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background: transparent;
+    border: none;
+  }
+  header .header__button button i {
+    font-size: 30px;
+  }
+  header .header__button button #open_cancel_menu {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  header .header__button {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    float: right;
+  }
+  header .header__button button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background: transparent;
+    border: none;
+  }
+  header .header__button button i {
+    font-size: 30px;
+  }
+  header .header__button button #open_cancel_menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1225px) {
+  body header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+    background-color: #3D454E;
+  }
+  body header .links__list {
+    display: inline-flex;
+    flex-direction: row;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    list-style: none;
+  }
+  body header .links__list li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  body header .links__list li a {
+    text-decoration: none;
+  }
+  body header .links__list .menu__item:hover {
+    background-color: #10B5BF;
+    transition: all ease 0.8s;
+  }
+  body main {
+    margin-top: 80px;
+  }
+  body main .main__description {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+  }
+  body main .main__description picture {
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+  }
+  body main .main__description picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body main .main__description div {
+    display: inline-block;
+    width: 50%;
+    margin-left: 50px;
+  }
+  body main .main__description div h1 {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  body main .main__description div h2 {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  body main .main__description div p,
+body main .main__description div ul,
+body main .main__description div li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+  body main .main__description div ul li {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  body main .main__description div .list li {
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1224px) {
+  body header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+    background-color: #3D454E;
+  }
+  body header .links__list {
+    display: inline-flex;
+    flex-direction: row;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    list-style: none;
+  }
+  body header .links__list li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  body header .links__list li a {
+    text-decoration: none;
+  }
+  body header .links__list .menu__item:hover {
+    background-color: #10B5BF;
+    transition: all ease 0.8s;
+  }
+  body main {
+    margin-top: 80px;
+  }
+  body main .main__description {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+  }
+  body main .main__description picture {
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+  }
+  body main .main__description picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body main .main__description div {
+    display: inline-block;
+    width: 50%;
+    margin-left: 50px;
+  }
+  body main .main__description div h1 {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  body main .main__description div h2 {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  body main .main__description div p,
+body main .main__description div ul,
+body main .main__description div li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+  body main .main__description div ul li {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  body main .main__description div .list li {
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+    background-color: #3D454E;
+  }
+  body header .links__list {
+    display: inline-flex;
+    flex-direction: row;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    list-style: none;
+  }
+  body header .links__list li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  body header .links__list li a {
+    text-decoration: none;
+  }
+  body header .links__list .menu__item:hover {
+    background-color: #10B5BF;
+    transition: all ease 0.8s;
+  }
+  body main {
+    margin-top: 80px;
+  }
+  body main .main__description {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+  }
+  body main .main__description picture {
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+  }
+  body main .main__description picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body main .main__description div {
+    display: inline-block;
+    width: 50%;
+    margin-left: 50px;
+  }
+  body main .main__description div h1 {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  body main .main__description div h2 {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  body main .main__description div p,
+body main .main__description div ul,
+body main .main__description div li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+  body main .main__description div ul li {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  body main .main__description div .list li {
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body header {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    padding-right: 15px;
+    background-color: #141414;
+  }
+  body header .header__menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    margin-top: 80px;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #3D454E;
+    background: linear-gradient(to right, #6F7B89, #3D454E);
+  }
+  body header .header__menu .links__list {
+    display: block;
+    list-style: none;
+  }
+  body header .header__menu .links__list li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body header .header__menu .links__list li a {
+    display: inline;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body header .header__menu .links__list .items__item:last-child {
+    margin-bottom: 0;
+  }
+  body header .one {
+    -webkit-clip-path: circle(0% at 100% 0%);
+    clip-path: circle(0% at 100% 0%);
+  }
+  body header .two {
+    -webkit-clip-path: circle(150% at 100% 0%);
+    clip-path: circle(150% at 100% 0%);
+  }
+  body main {
+    margin-top: 80px;
+  }
+  body main .main__description {
+    display: block;
+    padding: 15px;
+  }
+  body main .main__description picture {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  body main .main__description picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body main .main__description div {
+    display: block;
+    width: 80%;
+    margin-left: 50px;
+    margin: 0 auto;
+  }
+  body main .main__description div h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body main .main__description div h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  body main .main__description div p,
+body main .main__description div ul,
+body main .main__description div li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+  body main .main__description div ul li {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  body main .main__description div .list li {
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  body header {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    padding-right: 15px;
+    background-color: #141414;
+  }
+  body header .header__menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    margin-top: 80px;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #3D454E;
+    background: linear-gradient(to right, #6F7B89, #3D454E);
+  }
+  body header .header__menu .links__list {
+    display: block;
+    list-style: none;
+  }
+  body header .header__menu .links__list li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body header .header__menu .links__list li a {
+    display: inline;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body header .header__menu .links__list .items__item:last-child {
+    margin-bottom: 0;
+  }
+  body header .one {
+    -webkit-clip-path: circle(0% at 100% 0%);
+    clip-path: circle(0% at 100% 0%);
+  }
+  body header .two {
+    -webkit-clip-path: circle(150% at 100% 0%);
+    clip-path: circle(150% at 100% 0%);
+  }
+  body main {
+    margin-top: 80px;
+  }
+  body main .main__description {
+    display: block;
+    padding: 15px;
+  }
+  body main .main__description picture {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  body main .main__description picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body main .main__description div {
+    display: block;
+    width: 80%;
+    margin-left: 50px;
+    margin: 0 auto;
+  }
+  body main .main__description div h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body main .main__description div h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  body main .main__description div p,
+body main .main__description div ul,
+body main .main__description div li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 16px;
+  }
+  body main .main__description div ul li {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  body main .main__description div .list li {
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=info.css.map */

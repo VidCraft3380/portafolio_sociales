@@ -1,0 +1,913 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+html {
+    font-family: ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+    font-size: 62.5%;
+}
+body {
+    background-color: #141414;
+}
+header {
+    .header__button {
+        display: none;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            float: right;
+            button {
+                display: block;
+                width: 30px;
+                height: 30px;
+                outline: none;
+                background: transparent;
+                border: none;
+                i {
+                    font-size: 30px;
+                }
+                #open_cancel_menu {
+                    display: none;
+                }
+            }
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 767px){
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            float: right;
+            button {
+                display: block;
+                width: 30px;
+                height: 30px;
+                outline: none;
+                background: transparent;
+                border: none;
+                i {
+                    font-size: 30px;
+                }
+                #open_cancel_menu {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 1225px){
+    body {
+        header {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            padding: 15px;
+            z-index: 1;
+            background-color: #3D454E;
+            .links__list {
+                display: inline-flex;
+                flex-direction: row;
+                column-gap: 15px;
+                list-style: none;
+                li {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 15px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .menu__item:hover{
+                    background-color: #10B5BF;
+                    transition: all ease .8s;
+                }
+            }
+        }
+        main {
+            margin-top: 140px;
+            .timeline {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 30px;
+                margin-bottom: 30px;
+                >div {
+                    display: inline-block;
+                    picture {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 30px;
+                        img {
+                            display: block;
+                            width: 60%;
+                            height: 100%;
+                        }
+                    }
+                    div {
+                        display: inline-block;
+                        width: 200px;
+                        .line {
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            animation: expand 2s;
+                        }
+                        .title {
+                            display: block;
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                    }
+                    .center {
+                        margin: 0 15px;
+                    }
+                    .last {
+                        .text {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .main__periods {
+                display: flex;
+                justify-content: center;
+                >div {
+                    display: inline-flex;
+                    align-items: flex-start;
+                }
+                .card {
+                    position: relative;
+                    width: 220px;
+                    height: 320px;
+                    margin: 0 30px;
+                    background: #3D454E;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    cursor: pointer;
+                  }
+                  
+                  .card::before,
+                  .card::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 20%;
+                    padding: 0 15px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: #6F7B89;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                  }
+                  
+                  .card::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100%  0 15px;
+                  }
+                  
+                  .card:hover::before,
+                  .card:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card:nth-child(1):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+                  }
+                  .card:nth-child(2):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+                  }
+                  .card:nth-child(3):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+                  }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width : 1224px){
+    body {
+        header {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            padding: 15px;
+            z-index: 1;
+            background-color: #3D454E;
+            .links__list {
+                display: inline-flex;
+                flex-direction: row;
+                column-gap: 15px;
+                list-style: none;
+                li {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 15px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .menu__item:hover{
+                    background-color: #10B5BF;
+                    transition: all ease .8s;
+                }
+            }
+        }
+        main {
+            margin-top: 140px;
+            .timeline {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 30px;
+                margin-bottom: 30px;
+                >div {
+                    display: inline-block;
+                    picture {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 30px;
+                        img {
+                            display: block;
+                            width: 60%;
+                            height: 100%;
+                        }
+                    }
+                    div {
+                        display: inline-block;
+                        width: 200px;
+                        .line {
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            animation: expand 2s;
+                        }
+                        .title {
+                            display: block;
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                    }
+                    .center {
+                        margin: 0 15px;
+                    }
+                    .last {
+                        .text {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .main__periods {
+                display: flex;
+                justify-content: center;
+                >div {
+                    display: inline-flex;
+                    align-items: flex-start;
+                }
+                .card {
+                    position: relative;
+                    width: 220px;
+                    height: 320px;
+                    margin: 0 30px;
+                    background: #3D454E;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    cursor: pointer;
+                  }
+                  
+                  .card::before,
+                  .card::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 20%;
+                    padding: 0 15px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: #6F7B89;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                  }
+                  
+                  .card::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100%  0 15px;
+                  }
+                  
+                  .card:hover::before,
+                  .card:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card:nth-child(1):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+                  }
+                  .card:nth-child(2):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+                  }
+                  .card:nth-child(3):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+                  }
+            }
+        }
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    body {
+        header {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            padding: 15px;
+            z-index: 1;
+            background-color: #3D454E;
+            .links__list {
+                display: inline-flex;
+                flex-direction: row;
+                column-gap: 15px;
+                list-style: none;
+                li {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 15px;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .menu__item:hover{
+                    background-color: #10B5BF;
+                    transition: all ease .8s;
+                }
+            }
+        }
+        main {
+            margin-top: 140px;
+            .timeline {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 30px;
+                margin-bottom: 30px;
+                >div {
+                    display: inline-block;
+                    picture {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 30px;
+                        img {
+                            display: block;
+                            width: 60%;
+                            height: 100%;
+                        }
+                    }
+                    div {
+                        display: inline-block;
+                        width: 200px;
+                        .line {
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            animation: expand 2s;
+                        }
+                        .title {
+                            display: block;
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                    }
+                    .center {
+                        margin: 0 15px;
+                    }
+                    .last {
+                        .text {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .main__periods {
+                display: flex;
+                justify-content: center;
+                >div {
+                    display: inline-flex;
+                    align-items: flex-start;
+                }
+                .card {
+                    position: relative;
+                    width: 220px;
+                    height: 320px;
+                    margin: 0 30px;
+                    background: #3D454E;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    cursor: pointer;
+                  }
+                  
+                  .card::before,
+                  .card::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 20%;
+                    padding: 0 15px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: #6F7B89;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                  }
+                  
+                  .card::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100%  0 15px;
+                  }
+                  
+                  .card:hover::before,
+                  .card:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card:nth-child(1):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+                  }
+                  .card:nth-child(2):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+                  }
+                  .card:nth-child(3):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+                  }
+            }
+        }
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    body {
+        header {
+            display: block;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            z-index: 1;
+            height: 80px;
+            padding-right: 15px;
+            background-color: #141414;
+            .header__menu {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                padding-top: 30px;
+                margin-top: 80px;
+                flex-direction: column;
+                transition: all 1s ease;
+                background: #3D454E;
+                background: -webkit-linear-gradient(to right, #6F7B89, #3D454E);
+                background: linear-gradient(to right, #6F7B89, #3D454E);
+                .links__list {
+                    display: block;
+                    list-style: none;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        a {
+                            display: inline;
+                            font-size: 20px;
+                            color: #fff;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                    .items__item:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .one {
+                -webkit-clip-path: circle(0% at 100% 0%);
+                clip-path: circle(0% at 100% 0%);
+            }
+            .two {
+                -webkit-clip-path: circle(150% at 100% 0%);
+                clip-path: circle(150% at 100% 0%);
+            }
+        }
+        main {
+            margin-top: 80px;
+            .timeline {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 14px;
+                margin-bottom: 30px;
+                >div {
+                    display: inline-block;
+                    picture {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 30px;
+                        img {
+                            display: block;
+                            width: 60%;
+                            height: 100%;
+                        }
+                    }
+                    div {
+                        display: inline-block;
+                        width: 100px;
+                        height: 50px;
+                        .line {
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            animation: expand 2s;
+                        }
+                        .title {
+                            display: block;
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                    }
+                    .center {
+                        height: 90px;
+                        margin: 0 15px;
+                    }
+                    .last {
+                        .text {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .main__periods {
+                display: flex;
+                justify-content: center;
+                >div {
+                    display: inline-block;
+                    width: 280px;
+                }
+                .card {
+                    position: relative;
+                    width: 220px;
+                    height: 320px;
+                    margin: 30px;
+                    background: #3D454E;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    cursor: pointer;
+                  }
+                  
+                  .card::before,
+                  .card::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 20%;
+                    padding: 0 15px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: #6F7B89;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                  }
+                  
+                  .card::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100%  0 15px;
+                  }
+                  
+                  .card:hover::before,
+                  .card:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card:nth-child(1):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+                  }
+                  .card:nth-child(2):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+                  }
+                  .card:nth-child(3):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+                  }
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px){
+    body {
+        header {
+            display: block;
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            z-index: 1;
+            height: 80px;
+            padding-right: 15px;
+            background-color: #141414;
+            .header__menu {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                padding-top: 30px;
+                margin-top: 80px;
+                flex-direction: column;
+                transition: all 1s ease;
+                background: #3D454E;
+                background: -webkit-linear-gradient(to right, #6F7B89, #3D454E);
+                background: linear-gradient(to right, #6F7B89, #3D454E);
+                .links__list {
+                    display: block;
+                    list-style: none;
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        a {
+                            display: inline;
+                            font-size: 20px;
+                            color: #fff;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                    .items__item:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .one {
+                -webkit-clip-path: circle(0% at 100% 0%);
+                clip-path: circle(0% at 100% 0%);
+            }
+            .two {
+                -webkit-clip-path: circle(150% at 100% 0%);
+                clip-path: circle(150% at 100% 0%);
+            }
+        }
+        main {
+            margin-top: 80px;
+            .timeline {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 14px;
+                margin-bottom: 30px;
+                >div {
+                    display: inline-block;
+                    picture {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 30px;
+                        img {
+                            display: block;
+                            width: 60%;
+                            height: 100%;
+                        }
+                    }
+                    div {
+                        display: inline-block;
+                        width: 100px;
+                        height: 50px;
+                        .line {
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            animation: expand 2s;
+                        }
+                        .title {
+                            display: block;
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                    }
+                    .center {
+                        height: 90px;
+                        margin: 0 15px;
+                    }
+                    .last {
+                        .text {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .main__periods {
+                display: flex;
+                justify-content: center;
+                >div {
+                    display: inline-block;
+                }
+                .card {
+                    position: relative;
+                    width: 220px;
+                    height: 320px;
+                    margin: 30px;
+                    background: #3D454E;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    cursor: pointer;
+                  }
+                  
+                  .card::before,
+                  .card::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 20%;
+                    padding: 0 15px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: #6F7B89;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                  }
+                  
+                  .card::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100%  0 15px;
+                  }
+                  
+                  .card:hover::before,
+                  .card:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                  }
+                  
+                  .card:nth-child(1):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Este período se sitúa entre el Neolítico y la Edad del Bronce, y se caracteriza por el uso del cobre para la fabricación de herramientas y armas.";
+                  }
+                  .card:nth-child(2):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa entre el final de la Edad del Cobre y el comienzo de la Edad del Hierro, y se caracteriza por el uso del bronce (aleación de cobre y estaño).";
+                  }
+                  .card:nth-child(3):hover:after {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    content: "Esta etapa se sitúa después de la Edad del Bronce y se caracteriza por el uso del hierro para la fabricación de herramientas y armas.";
+                  }
+            }
+        }
+    }
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+}
